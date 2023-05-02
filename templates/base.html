@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>SteinCRM - {% block title %}{% endblock title %}</title>
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+
+    {% block content %}
+
+    {% endblock content %}
+
+    <footer class="mt-auto mb-4">
+        <div class="text-gray-600 text-center">
+            <span>Copyright &copy;
+                <script>
+                    document.write(new Date().getFullYear())
+                </script> Julind Pullumbi
+            </span>
+        </div>
+    </footer>
+</body>
+
+</html>
